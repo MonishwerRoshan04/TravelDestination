@@ -1,0 +1,256 @@
+/*____Root Css____*/
+:root{
+    --color-primary:#273842;        
+    --color-secondary:#FF9412;
+    --color-primaryLight: color-mix(in srgb, var(--color-primary) 8%, white 80%);
+    --color-secondaryLight: color-mix(in srgb, var(--color-secondary) 8%, white 80%);    
+    --color-lightGray:#f5f5f5;
+    --color-footer:#273842;
+    --color-ratingStar:#ff8000;
+}
+
+/*____Common____*/
+body {overflow-x: hidden;}
+body .container-fluid{width: 90%;}
+
+/*____Common Buttons____*/
+.btnPrimary {background: var(--color-primary);color: #fff;border: 1px solid var(--color-primary);border-radius: 8px;height: 40px;padding: 0 8px;}
+.btnSecondary{background: var(--color-secondary);color: #fff;border: 1px solid var(--color-secondary);border-radius: 8px;height: 40px;padding: 0 8px;}
+
+/*____Common Headers____*/
+.mainHeadingContent {text-align: center;}
+.sideHeadingContent .subHeading span, .mainHeadingContent .subHeading span{color: var(--color-secondary);font-weight: 500;position: relative;}
+.sideHeadingContent .subHeading span::before, .mainHeadingContent .subHeading span::before{    content: " ";position: absolute;right: -31px;top: 12px;width: 25px;height: 2px;background: var(--color-secondary);}
+.sideHeadingContent .subHeading img, .mainHeadingContent .subHeading img{width: 32px;margin-right: 4px;}
+.sideHeadingContent h5, .mainHeadingContent h5{font-size: 58px;font-weight: 700;}
+.sideHeadingContent p, .mainHeadingContent p{margin-top: 15px;}
+
+/*____Search Card____*/
+.searchContent{box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;border-radius: 20px;padding: 20px;margin-top: 35px;background:#fff;}
+.searchContent .cmnInputFields{display: flex;align-items: center;}
+.searchContent .cmnInputFields input{border: none;font-size: 18px;font-weight: 600;color: #000;width: 100%;}
+.searchContent .cmnInputFields input:focus{outline: none;}
+.searchContent .cmnInputFields input::placeholder{color:#000;}
+.searchContent .cmnInputFields label{color: #949494;font-size: 13px;position: relative;bottom: 6px;}
+.searchContent .cmnInputFields i{background: var(--color-secondaryLight);width: 40px;height: 40px;display: inline-block;border-radius: 50px;padding-top: 12px;color: var(--color-secondary);}
+.searchContent .cmnInputFields .searchCardIcons{margin-right: 10px;}
+.searchContent .searchBtn button{width: 100%;height: 53px;transition: all 0.4s linear;}
+.searchContent .searchBtn button:hover{background: transparent;color: var(--color-secondary);}
+.searchContent .__location{position: relative;}
+.searchContent .__location::after{content: " ";position: absolute;right:0;top: 0;border-right: 1px solid #ddd;height: 100%;}
+
+/*____Header____*/
+.mainHeader {background-color: #f9f9f9;padding: 10px 0px;}
+.mainHeader .logo{width: 195px;}
+.mainHeader .logo img{width: 100%;}
+.mainHeader .navbar{display: block;padding: 0px;}
+.mainHeader .navbar .navbar-toggler{border: none;padding: 0px;}
+.mainHeader .navbar .navbar-toggler:focus{outline: none;box-shadow: none;}
+.mainHeader .navbar .navbar-nav{margin: 0 auto !important;}
+.mainHeader .navbar .navbar-nav .nav-item {margin: 0 20px;}
+.mainHeader .navbar .navbar-nav .nav-item .nav-link{padding: 0px;font-weight: 600;position: relative;}
+.mainHeader .navbar .navbar-nav .nav-item .nav-link::before{content: " ";position: absolute;left: 50%;bottom: 0%;transform: translate(-50%, -50%);width: 0;height: 2px;background-color: var(--color-secondary);transition: all 0.5s linear;}
+.mainHeader .navbar .navbar-nav .nav-item .nav-link:hover::before{width: 100%;}
+.mainHeader .navbar .navbar-nav .nav-item .nav-link.active{color: var(--color-secondary);}
+.mainHeader .navbar .container-fluid{width: 100%;padding: 0px;}
+
+.mainHeader .menus ul{margin: 0;padding: 10px 0 0 0;list-style: none;text-align: center;margin-right: 0px !important;}
+.mainHeader .menus ul li{display: inline-block;margin-right: 40px;position: relative;overflow: hidden;cursor: pointer;border: none;}
+.mainHeader .menus ul li a{color: #000;text-decoration: none;font-weight: 500;transition: all 0.3s ease-in-out;position: relative;overflow: hidden;padding: 0px;}
+.mainHeader .menus ul li a:after {content: " ";width: 0%;height: 2px;background: var(--color-secondary);position: absolute;transition: all 0.4s ease-in-out;right: 0;bottom: -2px;}
+.mainHeader .menus ul li:hover a::after {right: auto;left: 0;width: 100%;}
+.mainHeader .menus ul li:hover a {color: #183153;animation: scaleUpNew 0.3s ease-in-out;}
+@keyframes scaleUpNew {0% {transform: scale(1);}50% {transform: scale(0.95);}100% {transform: scale(1);}}
+
+.mainHeader .logBtns{padding-top: 0px;text-align: right;}
+.mainHeader .logBtns button{padding: 0px 14px;border-radius: 7px;font-size: 13px;height: 30px;font-weight: 500;}
+.mainHeader .logBtns .darkModeToggle{width: 32px;height: 32px;text-align: center;padding: 0px;color: var(--color-secondary);margin-right: 5px;border: 1px solid var(--color-secondary);transition: 0.3s ease all;overflow: hidden;position: relative;z-index: 1;background: transparent;}
+.mainHeader .logBtns .btnPrimary{margin-left: 5px;transition: all 0.5s linear;}
+.mainHeader .logBtns .btnPrimary:hover{color: var(--color-primary);background: transparent;}
+.mainHeader .logBtns .btnSecondary{border: 1px solid var(--color-secondary);color: var(--color-secondary);background-color: #fff;transition: 0.3s ease all;overflow: hidden;position: relative;z-index: 1;}
+.mainHeader .logBtns .btnSecondary::before, .mainHeader .logBtns .darkModeToggle::before{content: " ";position: absolute;left: 50%;top: 50%;width: 0px;height: 0px;transform: translate(-50%, -50%);background-color: var(--color-secondary);transition: all 0.5s linear;border-radius: 50px;z-index: -1;}
+.mainHeader .logBtns .btnSecondary:hover::before, .mainHeader .logBtns .darkModeToggle:hover::before{width: 100px;height: 100px}
+.mainHeader .logBtns .btnSecondary:hover, .mainHeader .logBtns .darkModeToggle:hover{color: #fff;}
+
+/*____Banner____*/
+.banner {padding: 40px 0px;position: relative;}
+.banner .leftContent{padding-top: 10%;}
+.banner .leftContent .sideHeadingContent{padding-right: 13%;}
+
+.banner .rightContent{position: relative;}
+.banner .rightContent img{width: 100%;}
+.banner .rightContent .layerCard {width: 190px;background: rgb(255 255 255 / 14%);backdrop-filter: blur(8px);-webkit-backdrop-filter: blur(2px);border-radius: 20px;border: 1px solid rgb(176 176 176 / 23%);box-shadow: 0 8px 32px rgb(255 255 255 / 12%), inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.1), inset 0 0 14px -1px rgba(255, 255, 255, 1);position: absolute;padding: 15px;}
+.banner .rightContent .layerCard.card1{top: 177px;left: -11px;animation: card1Float 2s linear infinite alternate;}
+@keyframes card1Float {from{transform: translateY(-10px);}to{transform: translateY(10px);}}
+.banner .rightContent .layerCard.card2{right: 219px;top: 56px;width: auto;background: #ff000000;border: 1px solid #dce8e994;backdrop-filter: blur(1px);animation: card2Float 2s linear infinite alternate;}
+@keyframes card2Float {from{transform: translateX(-10px);}to{transform: translateX(10px);}}
+.banner .rightContent .layerCard p{font-size: 13px;margin-bottom: 0px;}
+.banner .rightContent .layerCard h5{font-size: 16px;font-weight: 700;margin-bottom: 3px;}
+
+.banner .layer1{position: absolute;bottom: 0;right: 0;z-index: -1;}
+.banner .layer1 img{width: 100%;opacity: 0.5;}
+
+/*____About____*/
+.about {background: var(--color-secondaryLight);overflow: hidden;}
+.about .leftContent img{width: 100%;}
+.about .rightContent {padding-top: 10%;}
+.about .rightContent .achieveCards {padding-top: 18px;}
+.about .rightContent .achieveCards .innerCard{background: #fff;padding: 15px 20px;border-radius: 15px;text-align: center;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+.about .rightContent .achieveCards .innerCard h5{margin: 0px;font-weight: 700;font-size: 24px;color: var(--color-secondary);}
+.about .rightContent .achieveCards .innerCard p{margin: 0px;}
+
+/*____What We Give____*/
+.whatWeGive {padding: 5% 0%;overflow: hidden;}
+.whatWeGive .rightContent .featureCard{box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;border-radius: 20px;padding: 20px;margin-top: 35px;position: relative;overflow: hidden;z-index: 1;cursor: pointer;border-bottom: 3px solid var(--color-secondary);}
+.whatWeGive .rightContent .featureCard::before{content: " ";position: absolute;right: -100px;bottom: -100px;width: 0%;height: 0%;transition: all 0.5s linear;background: var(--color-primary);border-radius: 50%;z-index: -1;}
+.whatWeGive .rightContent .featureCard:hover::before{width: 500px;height: 500px;}
+.whatWeGive .rightContent .featureCard:hover .icons{background: #fff;}
+.whatWeGive .rightContent .featureCard .icons{width: 65px;background: var(--color-secondaryLight);border-radius: 10px;text-align: center;height: 65px;padding-top: 14px;transition: all 0.5s linear;}
+.whatWeGive .rightContent .featureCard .icons img{width: 40px;}
+.whatWeGive .rightContent .featureCard:hover .contents h5{color: #fff;}
+.whatWeGive .rightContent .featureCard:hover .contents p{color: #ddd;}
+
+.whatWeGive .rightContent .featureCard .contents{padding-top: 12px;}
+.whatWeGive .rightContent .featureCard .contents h5{font-weight: 700;transition: all 0.5s linear;}
+.whatWeGive .rightContent .featureCard .contents p{color:#858992;line-height: 20px;transition: all 0.5s linear;}
+
+/*____Destination____*/
+.topDestination {padding-bottom: 30px;overflow: hidden;}
+.topDestination .destinationBanner{background: var(--color-lightGray);padding: 30px 20px 100px 20px;border-radius: 50px;position: relative;margin-bottom: 60px;}
+.topDestination .destinationBanner .mainHeadingContent{padding: 0 15%;}
+
+.topDestination .destinationBanner .searchContent{position: absolute;width: 85%;bottom: 0%;left: 50%;transform: translate(-50%, 37%);}
+.topDestination .destinationBanner .searchContent .cmnInputFields{position: relative;}
+.topDestination .destinationBanner .searchContent .cmnInputFields::after{content: " ";position: absolute;right:0;top: 0;border-right: 1px solid #ddd;height: 100%;}
+.topDestination .destinationBanner .searchContent .cmnInputFields.__checkOut::after{display: none;}
+
+.topDestination .destinationCard{box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;border-radius: 20px;padding: 10px;margin-bottom: 20px;background: #fff;}
+.topDestination .destinationCard .cardImg {position: relative;overflow: hidden;cursor: pointer;border-radius: 20px;}
+.topDestination .destinationCard .cardImg img{width: 100%;border-radius: 20px;height: 240px;transition: all 0.5s linear;overflow: hidden;}
+.topDestination .destinationCard .cardImg:hover img{transform: scale(1.2) rotate(-5deg);}
+.topDestination .destinationCard .cardImg .ratings{position: absolute;right: 6px;top: 6px;background: rgb(0 0 0);border-radius: 50px;border: none;padding: 2px 16px;}
+.topDestination .destinationCard .cardImg .ratings span{color: #fff;}
+.topDestination .destinationCard .cardImg .ratings span i{font-size: 12px;color: var(--color-ratingStar);margin-right: 2px;position: relative;top: -1px;}
+.topDestination .destinationCard .cardContent{padding: 10px 5px;display: flex;justify-content: space-between;align-items: center;}
+.topDestination .destinationCard .cardContent .leftCnt h5{font-weight: 700;margin: 0px;padding-bottom: 8px;}
+.topDestination .destinationCard .cardContent .leftCnt i{color: var(--color-secondary);}
+.topDestination .destinationCard .cardContent .leftCnt p{margin: 0px;}
+.topDestination .destinationCard .cardContent .rightCnt .btnSecondary{border: 1px solid var(--color-secondary);color: var(--color-secondary);background-color: #fff;}
+
+.topDestination .viewMoreBtn{text-align: center;padding: 0px;}
+.topDestination .viewMoreBtn button{transition: all 0.4s linear;border-bottom: 4px solid #000;padding: 6px 20px;height: 52px;font-size: 16px;font-weight: 600;}
+.topDestination .viewMoreBtn button:hover{background: transparent;color: var(--color-secondary);}
+
+/*____WhatCustomerSay____*/
+.whatCustomerSay{padding: 60px 0px;overflow: hidden;}
+.whatCustomerSay .leftContent .customerReviewCard{box-shadow:rgba(149, 157, 165, 0.2) 0px 3px 3px;border-radius: 20px;padding: 28px 20px;margin-bottom: 20px;background: var(--color-primaryLight);position: relative;margin-top: 35px;}
+.whatCustomerSay .leftContent .customerReviewCard .quoteLayer{position: absolute;top: -22px;right: 21px;}
+.whatCustomerSay .leftContent .customerReviewCard .quoteLayer i{font-size: 50px;color: var(--color-secondary);opacity: 0.3;}
+.whatCustomerSay .leftContent .customerReviewCard h5{margin: 0px;}
+.whatCustomerSay .leftContent .customerReviewCard p{margin: 0px;}
+.whatCustomerSay .leftContent .customerReviewCard .profileImg img{width: 42px;height: 42px;object-fit: cover;border-radius: 50px;}
+.whatCustomerSay .leftContent .customerReviewCard .profileHeader{display: flex;align-items: center;border-bottom: 1px solid #ddd;padding: 0px 0px 10px 0px;margin-bottom: 15px;}
+.whatCustomerSay .leftContent .customerReviewCard .profileHeader .profileCnt{padding-left: 10px;}
+.whatCustomerSay .leftContent .customerReviewCard .profileContent p{color: #858992;}
+.whatCustomerSay .leftContent .customerReviewCard .profileContent h5{padding-top: 4px;}
+.whatCustomerSay .leftContent .customerReviewCard .profileContent i{margin-right: 3px;font-size: 14px;color: var(--color-secondary);}
+
+.whatCustomerSay .rightContent img{width: 100%;}
+
+/*____Discount____*/
+.dicsounts {padding-bottom: 65px;}
+.dicsounts .dicsountCard{border-radius: 30px;background: var(--color-secondaryLight);padding: 50px 15%;text-align: center;}
+.dicsounts .dicsountCard h5{font-size: 45px;font-weight: 700;margin-bottom: 32px;}
+.dicsounts .dicsountCard h5 span{color: var(--color-secondary);}
+.dicsounts .dicsountCard .getStartBtn .btnSecondary{transition: all 0.4s linear;border-bottom: 4px solid #000;padding: 6px 20px;height: 52px;font-size: 16px;font-weight: 600;}
+.dicsounts .dicsountCard .getStartBtn .btnSecondary:hover{background: transparent;color: var(--color-secondary);}
+
+/*____Footer____*/
+.footer {background: var(--color-footer);padding: 40px 0px 0px 0px;}
+.footer .footerHeader {border-bottom: 1px solid #f0f0f03b;padding-bottom: 15px;}
+.footer .footerHeader .leftContent .logo{width: 195px;}
+.footer .footerHeader .leftContent .logo img{width: 100%;}
+.footer .footerHeader .rightContent {text-align: right;}
+.footer .footerHeader .rightContent .inputField{position: relative;}
+.footer .footerHeader .rightContent .inputField i{font-size: 13px;}
+.footer .footerHeader .rightContent .inputField .envelope{position: absolute;left: 6px;top: 5px;color: #787878;height: 32px;border-radius: 6px;width: 32px;text-align: center;padding-top: 4px;}
+.footer .footerHeader .rightContent .inputField .envelope i{font-size: 15px;color: var(--color-secondary);margin-right: 10px;background: #fff;width: 25px;height: 25px;border-radius: 50px;position: relative;bottom: 0px;padding-top: 5px;}
+.footer .footerHeader .rightContent .inputField .sendDatas{position: absolute;right: 6px;top: 4px;background: var(--color-secondary);color: #fff;height: 32px;border-radius: 6px;width: 32px;text-align: center;padding-top: 4px;}
+.footer .footerHeader .rightContent .inputField input{border: 1px solid #ddd;border-radius: 8px;padding: 5px 48px 5px 34px;height: 40px;width: 100%;}
+.footer .footerHeader .rightContent .inputField input:focus{outline: none;}
+
+.footer .footerMenus{padding-top: 25px;border-bottom: 1px solid #f0f0f03b;}
+.footer .footerMenus ul{list-style: none;}
+.footer .footerMenus ul .menuHeader{font-weight: 600;font-size: 18px;}
+.footer .footerMenus ul .menuHeader a{color: #fff;position: relative !important;font-size: 17px;}
+.footer .footerMenus ul .menuHeader a:first-child::before{content: " ";position: absolute;right: -33px;top: 14px;width: 27px;height: 2px;background: var(--color-secondary);border-radius: 50px;display: inline-block;}
+.footer .footerMenus ul .menuHeader:hover a::after{display: none;}
+.footer .footerMenus ul li{padding-bottom: 10px;position: relative;overflow: hidden;cursor: pointer;border: none;}
+.footer .footerMenus ul li a{text-decoration: none;color: #fff;transition: all 0.3s ease-in-out;position: relative;overflow: hidden;font-size: 15px;}
+.footer .footerMenus ul li a:after {content: " ";width: 0%;height: 1px;background: var(--color-secondary);position: absolute;transition: all 0.4s ease-in-out;right: 0;bottom: -3px;}
+.footer .footerMenus ul li:hover a::after {right: auto;left: 0;width: 100%;}
+.footer .footerMenus ul li:hover a {color: var(--color-secondary);animation: scaleUp 0.3s ease-in-out;}
+@keyframes scaleUp {0% {transform: scale(1);}50% {transform: scale(0.95);}100% {transform: scale(1);}}
+.footer .footerMenus .socialLinks {padding-left: 0px;}
+.footer .footerMenus .socialLinks .socialIcons{padding-left: 0px;}
+.footer .footerMenus .socialLinks .socialIcons li{display: inline-block;margin-right: 10px;}
+.footer .footerMenus .socialLinks .socialIcons li i{font-size: 16px;color: var(--color-secondary);box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;background: #fff;width: 30px;height: 30px;border-radius: 6px;text-align: center;padding-top: 7px;transition: all 0.5s linear;}
+.footer .footerMenus .socialLinks .socialIcons li i:hover{background: var(--color-secondary);color: #fff;}
+.footer .footerMenus .socialLinks .socialIcons li a:after{display: none;}
+
+.footer .copyRights{padding: 15px 0px;}
+.footer .copyRights p{margin: 0px;color: #fff;text-align: center;font-size: 15px;}
+
+/*____Toggle Mode____*/
+.modeChange .banner .layer1{display: none;}
+.modeChange .searchContent .cmnInputFields input{background: transparent;color: #fff;}
+.modeChange .whatCustomerSay .leftContent .customerReviewCard .profileHeader{border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
+.modeChange .dicsounts .dicsountCard .getStartBtn .btnSecondary, .modeChange .topDestination .viewMoreBtn button{border-bottom: 4px solid rgb(255 255 255);}
+.modeChange .footer .container-fluid, .modeChange .footer .footerHeader .rightContent .inputField .envelope i{background: transparent;}
+.modeChange .mainHeader .navbar, .modeChange .about, .modeChange .topDestination .destinationBanner, .modeChange{background: #000;}
+
+.modeChange .footer .footerHeader .rightContent .inputField input, .modeChange .mainHeader .navbar .navbar-nav .nav-item .nav-link, 
+.modeChange .dicsounts .dicsountCard h5, .modeChange .dicsounts .dicsountCard p, .modeChange .topDestination .destinationCard .cardContent .leftCnt h5, 
+.modeChange .topDestination .destinationCard .cardContent .leftCnt p, .modeChange .about .rightContent .achieveCards .innerCard p,
+.modeChange .searchContent .cmnInputFields input::placeholder, .modeChange .whatWeGive .rightContent .featureCard .contents h5, 
+.modeChange .whatCustomerSay .leftContent .customerReviewCard .profileHeader .profileCnt, .modeChange .banner .rightContent .layerCard.card1, .modeChange .banner .rightContent .layerCard.card2, 
+.modeChange .sideHeadingContent h5, .modeChange .mainHeadingContent h5, .modeChange .sideHeadingContent p, .modeChange .mainHeadingContent p{color: #fff;}
+
+.modeChange .mainHeader, .modeChange .dicsounts .dicsountCard, .modeChange .whatCustomerSay .leftContent .customerReviewCard,
+.modeChange .searchContent, .modeChange .about .rightContent .achieveCards .innerCard, 
+.modeChange .whatWeGive .rightContent .featureCard, .modeChange .topDestination .destinationCard, 
+.modeChange .searchContent .cmnInputFields i, .modeChange .footer, .modeChange .footer .footerMenus .socialLinks .socialIcons li i,
+.modeChange .footer .footerHeader .rightContent .inputField input, .modeChange .topDestination .destinationCard .cardContent .rightCnt .btnSecondary, 
+.modeChange .topDestination .destinationBanner .searchContent, .modeChange .mainHeader .navbar .navbar-toggler, .modeChange .mainHeader .logBtns .btnSecondary, 
+.modeChange .banner .rightContent .layerCard.card1, .modeChange .banner .rightContent .layerCard.card2 {background: rgba(255, 255, 255, 0.05);backdrop-filter: blur(20px);-webkit-backdrop-filter: blur(20px);border-radius: 10px;border: 1px solid rgba(255, 255, 255, 0.3);box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),inset 0 1px 0 rgba(255, 255, 255, 0.5),inset 0 -1px 0 rgba(255, 255, 255, 0.1),inset 0 0 0px 0px rgba(255, 255, 255, 0)}
+.modeChange .mainHeader .logBtns .btnSecondary{border-radius: 7px !important;color: #fff;}
+
+.modeChange .footer{border-radius: 20px 20px 0 0;}
+.modeChange .mainHeader{border-radius: 0 0 10px 10px;}
+.modeChange .mainHeader .container-fluid{background-color: transparent !important;background: #0d0d0d !important;}
+.modeChange .mainHeader .navbar .navbar-toggler {padding: 3px;border-radius: 4px;background: rgb(255 255 255 / 53%);font-size: 14px;}
+
+/*____Signup Modal____*/
+.signupLoginModal .title{text-align: center;padding-bottom: 20px;}
+.signupLoginModal .title h5{font-weight: 700;}
+.signupLoginModal .title h5, .signupModal .title p{margin-bottom: 0px;}
+.signupLoginModal .title p{padding-top: 8px;font-size: 15px;}
+
+.signupLoginModal .modal-body{padding: 25px 35px;}
+
+.signupLoginModal .contents .fieldDatas{position: relative;margin-bottom: 15px;}
+.signupLoginModal .contents .fieldDatas input{height: 45px;font-size: 14px;}
+.signupLoginModal .contents .fieldDatas input:focus{box-shadow: none;border: 1px solid var(--color-primary);}
+.signupLoginModal .contents .fieldDatas p{text-align: center;position: relative;}
+.signupLoginModal .contents .fieldDatas p:before{content: " ";position: absolute;left: 0;top: 13px;border-bottom: 1px dashed #ddd;width: 46%;}
+.signupLoginModal .contents .fieldDatas p:after{content: " ";position: absolute;right: 0;top: 13px;border-bottom: 1px dashed #ddd;width: 46%;}
+.signupLoginModal .contents .fieldDatas .lockInfo{position: absolute;right: 15px;top: 8px;cursor: pointer;}
+.signupLoginModal .contents .fieldDatas .lockInfo img{width: 20px;}
+
+.signupLoginModal .contents .signUpLogin{text-align: center;margin-bottom: 15px;}
+.signupLoginModal .contents .signUpLogin img{width: 25px;margin-right: 8px;}
+.signupLoginModal .contents .signUpLogin button{width: 100%;background: none;color: #000;border: 1px solid #ddd;height: 45px;}
+
+.signupLoginModal .footerBtn{text-align: center;}
+.signupLoginModal .footerBtn button{font-size: 14px;padding: 6px 20px;width: 100%;height: 45px;transition: all 0.5s linear;}
+.signupLoginModal .footerBtn button:hover{color: var(--color-primary);background: transparent;}

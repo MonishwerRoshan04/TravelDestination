@@ -1,0 +1,85 @@
+@media (max-width: 575px) {
+    /*____Common Headers____*/
+    .sideHeadingContent h5, .mainHeadingContent h5, .dicsounts .dicsountCard h5{font-size: 34px;}
+    .sideHeadingContent p, .mainHeadingContent p{margin-top: 0px;color: #858992;} 
+    .mainHeader .navbar .navbar-nav .nav-item .nav-link{font-size: 13px;}   
+
+    /*____Search Card____*/
+    .searchContent .cmnInputFields {padding-bottom: 12px;border-bottom: 1px solid rgba(255, 255, 255, 0.3);margin-bottom: 12px;}
+    .searchContent .searchBtn{padding-top: 5px;}
+    .searchContent .__location::after{display: none;}
+
+    /*____Banner____*/
+    .banner {padding: 22px 0px 40px 0px;}
+    .banner .rightContent{display: none;}    
+
+    /*____About____*/
+    .about {padding: 20px 0px 40px 0px;}
+    .about .rightContent {padding-top: 5%;}
+    .about .rightContent .achieveCards .innerCard{margin-bottom: 12px;border: 1px solid #ffd097;}
+    .about .rightContent .achieveCards .innerCard h5{font-size: 35px;}
+
+    /*____whatCustomerSay____*/
+    .whatCustomerSay {padding: 30px 0px 40px 0px;}
+
+    /*____What We Give____*/
+    .whatWeGive .rightContent .featureCard{margin-top: 18px;}    
+
+    /*____Destination____*/
+    .topDestination .destinationBanner{margin-bottom: 22px;}
+    .topDestination .destinationBanner .searchContent .cmnInputFields::after{display: none;}  
+
+    /*____Discount____*/
+    .dicsounts {padding-bottom: 40px;}
+    .dicsounts .dicsountCard {padding: 30px 25px !important;}
+
+    /*____Footer____*/
+    .footer .footerHeader .rightContent .inputField{margin-top: 25px;}  
+    .footer .footerMenus{border-bottom: none;}
+    .footer .footerMenus ul{padding-left: 0px;border-bottom: 1px solid #f0f0f03b;}      
+    .footer .footerMenus .socialLinks .socialIcons{border-bottom: none;}  
+    .footer .copyRights{padding-top: 0px;} 
+    
+}
+@media (max-width: 992px) {
+    /*____Common Headers____*/
+    .mainHeader .logBtns{padding: 10px;}
+    .mainHeader .navbar .navbar-collapse{background: #fff;border-radius: 5px;padding: 0px;box-shadow: rgba(99, 99, 99, 0.2) 0px 7px 30px -13px;border-bottom: 2px solid var(--color-secondary);}
+    .mainHeader .navbar .navbar-nav .nav-item{text-align: center;margin: 0px;padding: 10px 0px;border-bottom: 1px solid #ededed;}
+    .modeChange .mainHeader .navbar .navbar-nav .nav-item{border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
+    .modeChange .mainHeader .navbar .navbar-collapse{border: none;}
+    .modeChange .mainHeader .navbar .navbar-collapse{background: rgba(255, 255, 255, 0.05);backdrop-filter: blur(20px);-webkit-backdrop-filter: blur(20px);border-radius: 10px;border: 1px solid rgba(255, 255, 255, 0.3);box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),inset 0 1px 0 rgba(255, 255, 255, 0.5),inset 0 -1px 0 rgba(255, 255, 255, 0.1),inset 0 0 0px 0px rgba(255, 255, 255, 0)}
+
+    /*____Banner____*/
+    .banner .leftContent{padding-top: 2%;}
+    .banner .leftContent .sideHeadingContent{padding-right: 0px;}
+
+    /*____Destination____*/
+    .topDestination .destinationBanner{padding-bottom: 40px;}
+    .topDestination .destinationBanner .mainHeadingContent{padding: 0px;}
+    .topDestination .destinationBanner .searchContent{width: 100%;position: unset;transform: unset;}    
+    .topDestination .destinationBanner .searchContent .cmnInputFields::after{display: none;}
+
+    /*____Search Card____*/
+    .searchContent .searchBtn {margin-top: 15px;}
+    
+    /*____Discount____*/
+    .dicsounts .dicsountCard{padding: 50px 0px;;}
+}
+@media (max-width: 1200px) and (min-width:992px) {
+    /*____Search Card____*/
+    .searchContent{padding: 10px;border-radius: 12px;}
+    .searchContent .cmnInputFields i {width: 30px;height: 30px;padding-top: 7px;  }
+    .searchContent .cmnInputFields input{font-size: 16px;padding: 0px;}
+    .searchContent .cmnInputFields label{font-size: 11px;}    
+    .searchContent .searchBtn button{font-size: 13px;}
+    .searchContent .resPadRight{padding-right: 0px;}  
+    
+    /*____Banner____*/
+    .banner .leftContent .sideHeadingContent{padding-right: 0px;}
+
+    /*____About____*/
+    .about .rightContent .achieveCards .innerCard{padding: 10px 7px;}
+    .about .rightContent .achieveCards .innerCard p{font-size: 12px;}
+}
+

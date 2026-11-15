@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="images/favIcon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="CommonFiles/bootstrap-5.3.8/css/bootstrap.min.css">    
+    <script src="CommonFiles/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>    
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="CommonFiles/Fonts/fontawesome-7.1.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+</head>
+<body>
+    <header class="mainHeader" id="home">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="logo navbar-brand">
+                        <a class="navbar-brand" href="#"><img src="images/logo.png" id="mainLogo" alt=""></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#feature">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#destination">Destination</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonial">Testimonial</a>
+                            </li>
+                        </ul>
+                        <div class="logBtns">
+                            <button class="darkModeToggle" id="toggleMode"><i class="fa fa-moon"></i></button>
+                            <button class="btnSecondary" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+                            <button class="btnPrimary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="leftContent" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="sideHeadingContent">
+                            <div class="subHeading">
+                                <span><img src="images/Banner/image2.png" alt=""> Explore the world</span>
+                            </div>
+                            <h5>Discover the best destination in the world</h5>
+                            <p>Let's find your dream destinations here we will recommend you a beautiful place and a
+                                cheap trip with your beloved family. </p>
+                        </div>
+                        <div class="searchContent">
+                            <div class="row">
+                                <div class="col-lg-5 col-sm-5 col-12 __location">
+                                    <div class="cmnInputFields">
+                                        <div class="searchCardIcons">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="Location">
+                                            <label>Where are you going?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4 col-12 resPadRight">
+                                    <div class="cmnInputFields">
+                                        <div class="searchCardIcons">
+                                            <i class="fa fa-calendar"></i>
+
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="Select Date">
+                                            <label>03 Aug 2022</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-12">
+                                    <div class="searchBtn">
+                                        <button class="btnSecondary">Get Started</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="rightContent" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="images/Banner/image1.png" alt="">
+
+                        <div class="layerCard card1">
+                            <h5>100+ Destinations</h5>
+                            <p>More than 100 travelers use this platform</p>
+                        </div>
+
+                        <div class="layerCard card2">
+                            <h5>100%</h5>
+                            <p>Verified</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layer1">
+            <img src="images/Banner/layer1.png" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="leftContent" data-aos="fade-right" data-aos-duration="1500">
+                        <img src="images/About/image1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="rightContent" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="sideHeadingContent">
+                            <div class="subHeading">
+                                <span>About</span>
+                            </div>
+                            <h5>We recommend beautiful destinations every month</h5>
+                            <p>Discover handpicked travel destinations every month, from peaceful beaches to exciting
+                                city escapes. We help you explore beautiful places, create unforgettable memories, and
+                                plan trips that fit your budget and travel style.</p>
+                        </div>
+                        <div class="achieveCards">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-4 col-12">
+                                    <div class="innerCard" data-aos="zoom-in-up" data-aos-duration="2500">
+                                        <h5 id="explorersCount">0</h5>
+                                        <p>Our Explorers</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4 col-12">
+                                    <div class="innerCard" data-aos="zoom-in-up" data-aos-duration="2500">
+                                        <h5 id="destinationsCount">0</h5>
+                                        <p>Destinations</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4 col-12">
+                                    <div class="innerCard" data-aos="zoom-in-up" data-aos-duration="2500">
+                                        <h5 id="yearsCount">0</h5>
+                                        <p>Years Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="whatWeGive" id="feature">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 col-12">
+                    <div class="leftContent" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="sideHeadingContent">
+                            <div class="subHeading">
+                                <span>What We Give</span>
+                            </div>
+                            <h5>Best Features For You</h5>
+                            <p>We will provide the best features for those of you who want to travel comfortably with
+                                your family.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 col-12">
+                    <div class="rightContent">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="featureCard" data-aos="flip-left" data-aos-duration="2500">
+                                    <div class="icons">
+                                        <img src="images/WhatWeGive/img1.png" alt="">
+                                    </div>
+                                    <div class="contents">
+                                        <h5>Lots of Choices</h5>
+                                        <p>We have provided several choices of destinations and very cheap traveling
+                                            packages.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="featureCard" data-aos="flip-left" data-aos-duration="2500">
+                                    <div class="icons">
+                                        <img src="images/WhatWeGive/img2.png" alt="">
+                                    </div>
+                                    <div class="contents">
+                                        <h5>Best Tour Guide</h5>
+                                        <p>We provide professional tour guides and people who understand the place.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="featureCard" data-aos="flip-left" data-aos-duration="2500">
+                                    <div class="icons">
+                                        <img src="images/WhatWeGive/img3.png" alt="">
+                                    </div>
+                                    <div class="contents">
+                                        <h5>Easy Booking</h5>
+                                        <p>We will also make it easier for users to book tickets or book the place they
+                                            want.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="topDestination" id="destination">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-12">
+                    <div class="destinationBanner" data-aos="fade-up" data-aos-duration="2500">
+                        <div class="mainHeadingContent">
+                            <div class="subHeading">
+                                <span>Top Destination</span>
+                            </div>
+                            <h5>Let's Explore Your Dream Destination Here!</h5>
+                            <p>We have recommended popular destinations every week so you don't have to worry about your
+                                dream destination with travel destination.</p>
+                        </div>
+                        <div class="searchContent">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="cmnInputFields">
+                                        <div class="searchCardIcons">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                        <div>
+                                            <input type="text" id="locationSearch" placeholder="Location">
+                                            <label>Where are you going?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="cmnInputFields">
+                                        <div class="searchCardIcons">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="Person">
+                                            <label>How Many Person?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-6 col-12">
+                                    <div class="cmnInputFields">
+                                        <div class="searchCardIcons">
+                                            <i class="fa fa-calendar"></i>
+
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="Check In">
+                                            <label>03 Aug 2022</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-6 col-12">
+                                    <div class="cmnInputFields __checkOut">
+                                        <div class="searchCardIcons">
+                                            <i class="fa fa-calendar"></i>
+
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="Check Out">
+                                            <label>05 Aug 2022</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-12 col-12">
+                                    <div class="searchBtn">
+                                        <button class="btnSecondary" id="searchBtn">Get Started</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="destinationContainer">
+                <div class="col-lg-4 col-sm-6 col-12 destinationItem">
+                    <div class="destinationCard" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="cardImg">
+                            <img src="images/Destinations/img1.jpg" alt="">
+                            <div class="ratings">
+                                <span><i class="fa fa-star"></i>4.4</span>
+                            </div>
+                        </div>
+                        <div class="cardContent">
+                            <div class="leftCnt">
+                                <h5>Karangan Beach</h5>
+                                <p class="locations"><i class="fa-solid fa-location-dot"></i>Labuan Baja, Indonesia</p>
+                            </div>
+                            <div class="rightCnt">
+                                <button class="btnSecondary">$256</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 destinationItem">
+                    <div class="destinationCard" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="cardImg">
+                            <img src="images/Destinations/img2.jpg" alt="">
+                            <div class="ratings">
+                                <span><i class="fa fa-star"></i>4.8</span>
+                            </div>
+                        </div>
+                        <div class="cardContent">
+                            <div class="leftCnt">
+                                <h5>Kepunuh Beach</h5>
+                                <p class="locations"><i class="fa-solid fa-location-dot"></i>Bali, Indonesia</p>
+                            </div>
+                            <div class="rightCnt">
+                                <button class="btnSecondary">$267</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 destinationItem">
+                    <div class="destinationCard" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="cardImg">
+                            <img src="images/Destinations/img3.jpg" alt="">
+                            <div class="ratings">
+                                <span><i class="fa fa-star"></i>4.2</span>
+                            </div>
+                        </div>
+                        <div class="cardContent">
+                            <div class="leftCnt">
+                                <h5>Kucubung Beach</h5>
+                                <p class="locations"><i class="fa-solid fa-location-dot"></i>Labuan Bajo, Indonesia</p>
+                            </div>
+                            <div class="rightCnt">
+                                <button class="btnSecondary">$350</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 destinationItem">
+                    <div class="destinationCard" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="cardImg">
+                            <img src="images/Destinations/img4.jpg" alt="">
+                            <div class="ratings">
+                                <span><i class="fa fa-star"></i>4.9</span>
+                            </div>
+                        </div>
+                        <div class="cardContent">
+                            <div class="leftCnt">
+                                <h5>Lumukutan Beach</h5>
+                                <p class="locations"><i class="fa-solid fa-location-dot"></i>Natuna, Indonesia</p>
+                            </div>
+                            <div class="rightCnt">
+                                <button class="btnSecondary">$200</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 destinationItem">
+                    <div class="destinationCard" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="cardImg">
+                            <img src="images/Destinations/img5.jpg" alt="">
+                            <div class="ratings">
+                                <span><i class="fa fa-star"></i>4.3</span>
+                            </div>
+                        </div>
+                        <div class="cardContent">
+                            <div class="leftCnt">
+                                <h5>Curuti Beach</h5>
+                                <p class="locations"><i class="fa-solid fa-location-dot"></i>Pontianok, Indonesia</p>
+                            </div>
+                            <div class="rightCnt">
+                                <button class="btnSecondary">$256</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 destinationItem">
+                    <div class="destinationCard" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="cardImg">
+                            <img src="images/Destinations/img6.jpg" alt="">
+                            <div class="ratings">
+                                <span><i class="fa fa-star"></i>4.0</span>
+                            </div>
+                        </div>
+                        <div class="cardContent">
+                            <div class="leftCnt">
+                                <h5>Kapuas Beach</h5>
+                                <p class="locations"><i class="fa-solid fa-location-dot"></i>Semarang, Indonesia</p>
+                            </div>
+                            <div class="rightCnt">
+                                <button class="btnSecondary">$350</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-sm-12 col-12">
+                    <div class="viewMoreBtn" data-aos="fade-up" data-aos-duration="3000">
+                        <button class="btnSecondary">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="whatCustomerSay" id="testimonial">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="leftContent">
+                        <div class="sideHeadingContent" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="subHeading">
+                                <span>What They Say</span>
+                            </div>
+                            <h5>What Our Customer Say About Us</h5>
+                            <p>Discover handpicked travel destinations every month, from peaceful beaches to exciting
+                                city escapes. We help you explore beautiful places, create unforgettable memories, and
+                                plan trips that fit your budget and travel style.</p>
+                        </div>
+                       
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">                           
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-sm-12 col-12">
+<div class="customerReviewCard" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="quoteLayer">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div class="profileHeader">
+                                <div class="profileImg">
+                                    <img src="images/whatCustomerSay/img1.jpg" alt="">
+                                </div>
+                                <div class="profileCnt">
+                                    <h5>Park Tayeng</h5>
+                                    <p>Travel Enthusiast</p>
+                                </div>
+                            </div>
+                            <div class="profileContent">
+                                <p>“This platform is very helpful because there are many beautiful destinations here and
+                                    this platform really helps me in finding beautiful destinations and also very good
+                                    service so I really like to use Travel when I want to go traveling with my family
+                                </p>
+                                <h5><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i></h5>
+                            </div>
+                        </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                 
+                                <div class="carousel-item">
+                                 <div class="row">
+                                        <div class="col-lg-12 col-sm-12 col-12">
+                                            <div class="customerReviewCard" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="quoteLayer">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div class="profileHeader">
+                                <div class="profileImg">
+                                    <img src="images/whatCustomerSay/img3.jpg" alt="">
+                                </div>
+                                <div class="profileCnt">
+                                    <h5>Chloe Bennett</h5>
+                                    <p>Weekend & Group Trip Planner</p>
+                                </div>
+                            </div>
+                            <div class="profileContent">
+                                <p>“Coordinating a vacation for six friends is usually a nightmare, but this site saved us hours of back-and-forth. We found an incredible group package at a great price, and the itinerary had the perfect mix of sightseeing and downtime. We’re already using it to plan next year’s getaway!
+                                </p>
+                                <h5><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i></h5>
+                            </div>
+                        </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                
+                                <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-12">
+                                        <div class="customerReviewCard" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="quoteLayer">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div class="profileHeader">
+                                <div class="profileImg">
+                                    <img src="images/whatCustomerSay/img4.jpg" alt="">
+                                </div>
+                                <div class="profileCnt">
+                                    <h5>Elena</h5>
+                                    <p>Luxury Traveler</p>
+                                </div>
+                            </div>
+                            <div class="profileContent">
+                                <p>“our site matched us with breathtaking beachfront stays and private local tours that felt completely tailored to us. Every single detail was handled seamlessly from takeoff to return.
+                                </p>
+                                <h5><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i></h5>
+                            </div>
+                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                   
+                                                                                                                             
+                            </div>                           
+                        </div>
+                        <!-- <div class="customerReviewCard" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="quoteLayer">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div class="profileHeader">
+                                <div class="profileImg">
+                                    <img src="images/whatCustomerSay/img1.jpg" alt="">
+                                </div>
+                                <div class="profileCnt">
+                                    <h5>Park Tayeng</h5>
+                                    <p>Travel Enthusiast</p>
+                                </div>
+                            </div>
+                            <div class="profileContent">
+                                <p>“This platform is very helpful because there are many beautiful destinations here and
+                                    this platform really helps me in finding beautiful destinations and also very good
+                                    service so I really like to use Travel when I want to go traveling with my family
+                                </p>
+                                <h5><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i></h5>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="rightContent" data-aos="fade-left" data-aos-duration="1500">
+                        <img src="images/whatCustomerSay/img2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dicsounts">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-12">
+                    <div class="dicsountCard" data-aos="fade-up" data-aos-duration="1500">
+                        <h5>Let's Don't Miss The <span>50% Discount</span> & Explore the Beauty of the World</h5>
+                        <p>We have many special offers especially for you</p>
+                        <div class="getStartBtn">
+                            <button class="btnSecondary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-12">
+                    <div class="footerHeader">
+                        <div class="row">
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="leftContent">
+                                    <div class="logo">
+                                        <a href="#home"><img src="images/footerLogo.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <div class="rightContent">
+                                    <div class="inputField">
+                                        <span class="envelope"><i class="fa fa-envelope"></i></span>
+                                        <input type="text" placeholder="Your Mail">
+                                        <span class="sendDatas"><i class="fa-solid fa-paper-plane"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-12">
+                    <div class="footerMenus">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <ul>
+                                    <li class="menuHeader"><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#feature">Features</a></li>
+                                    <li><a href="#destination">Destination</a></li>
+                                    <li><a href="#testimonial">Testimonial</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <ul>
+                                    <li class="menuHeader"><a href="">Company</a></li>
+                                    <li><a href="">Our Team</a></li>
+                                    <li><a href="">Partner With Us</a></li>
+                                    <li><a href="">FAQ</a></li>
+                                    <li><a href="">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <ul>
+                                    <li class="menuHeader"><a href="">Support</a></li>
+                                    <li><a href="">Account</a></li>
+                                    <li><a href="">Support Center</a></li>
+                                    <li><a href="">Feedback</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Accessibility</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <ul class="socialLinks">
+                                    <li class="menuHeader"><a href="">Social Media</a></li>
+                                    <li>
+                                        <ul class="socialIcons">
+                                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyRights">
+                        <p>&copy;2026 Travel Destination. Copyright and All rights resrved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SignUp Modal -->
+    <div class="modal fade signupModal signupLoginModal" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">       
+        <div class="modal-body">
+            <div class="title">
+                <h5>Sign Up</h5>
+                <p>Create your account and start your journey with us today.</p>
+            </div>
+            <div class="contents">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="fieldDatas">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="fieldDatas">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>                        
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="fieldDatas">
+                            <input type="password" class="form-control passwordData" placeholder="Password">
+                            <div class="lockInfo lockDetails">
+                                <img src="images/view.png" class="lockInfoImg" alt="">
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="fieldDatas">
+                           <p>or</p>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="signupWithGoogle signUpLogin">
+                           <button type="button" class="btnPrimary"><img src="images/google.png">Sign up with Google</button>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                         <div class="footerBtn">                            
+                            <button type="button" class="btnPrimary" id="signup">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        </div>
+    </div>
+    </div>
+
+        <!-- Login Modal -->
+    <div class="modal fade loginModal signupLoginModal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">       
+        <div class="modal-body">
+            <div class="title">
+                <h5>Login</h5>
+                <p>Welcome back! Log in to continue your journey with us.</p>
+            </div>
+            <div class="contents">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="fieldDatas">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>                  
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="fieldDatas">
+                            <input type="password" class="form-control passwordData" placeholder="Password">
+                            <div class="lockInfo lockDetails">
+                                <img src="images/view.png" class="lockInfoImg" alt="">
+                            </div>                            
+                        </div>                                                   
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="fieldDatas">
+                           <p>or</p>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="signupWithGoogle signUpLogin">
+                           <button type="button" class="btnPrimary"><img src="images/google.png">Login with Google</button>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                         <div class="footerBtn">                            
+                            <button type="button" class="btnPrimary" id="signup">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        </div>
+    </div>
+    </div>
+
+    <!-- Script -->
+     <script src="script.js"></script>
+</body>
+</html>
