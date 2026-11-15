@@ -37,5 +37,5 @@ Travel-Destination/
 └── assets/
 
 Author
-Monishwermona B.N.
+Monishwermona B.N
 https://github.com/MonishwerRoshan04
